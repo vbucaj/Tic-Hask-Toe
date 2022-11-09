@@ -1,22 +1,18 @@
-# A Haskell template on Gitpod
+# EMURGO Academy Haskell Course: Part I
 
-This is a [Haskell](https://haskell.org/) template configured for ephemeral development environments on [Gitpod](https://www.gitpod.io/).
+This repository contains a preconfigured Haskell development environment, allowing you to start coding in Haskell with zero installation using [Gitpod](https://www.gitpod.io/) and a browser-based version of VS Code.
 
-## Next Steps
+The environment contains a guided Tic-Tac-Toe project, designed as a companion to the first part of EMURGO Academy's Haskell course.
 
-Click the button below to start a new development environment:
+## Create Your Environment
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/iburzynski/EMURGO-Hv4-Env-1)
+1. Fork this repository
+2. Copy the link to your new repository and prefix it with "https://gitpod.io/#" in your browser
+3. Wait for the environment to build. This can take a while the first time.
+4. Select "VS Code Browser" as your editor.
 
-## Get Started With Your Own Project
+## Build Your Project
 
-### A new project
+As you attend the live sessions, complete each of the assignments in the `/assignments` directory, making changes to the associated `.hs` files in the `/solutions` directory.
 
-Click the above "Open in Gitpod" button to start a new workspace. Once you're ready to push your first code changes, Gitpod will guide you to fork this project so you own it.
-
-### An existing project
-
-If you have an existing project and you want to create a gitpod environment for it, you need to follow and take into account these considerations.
-
-- This repo's Dockerfile **completely overwrites** the `cabal` file when building the container. This means, that if you simply copy-paste the `.gitpod.Dockerfile`, your `cabal`/`stack` files will disappear. Follow the instructions within `.gitpod.Dockerfile` to change this behaviour.
-- This repo uses `ghcup` to install all the tooling. Alternative installation isn't recommended.
+As you complete the assignments, commit and push your changes to Github using the `Source Control` tab in the left panel.
