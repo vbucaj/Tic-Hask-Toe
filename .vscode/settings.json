@@ -6,4 +6,5 @@
   "haskell.plugin.importLens.codeLensOn": false,
   "haskell.manageHLS": "GHCup",
   "gitpod.openInStable.neverPrompt": true,
+  "redhat.telemetry.enabled": true,
 }
