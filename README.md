@@ -8,8 +8,9 @@ The environment contains a guided Tic-Tac-Toe project, designed as a companion t
 
 1. Fork this repository
 2. Copy the link to your new repository and prefix it with "https://gitpod.io/#" in your browser
-3. Wait for the environment to build. This can take a while the first time.
-4. Select "VS Code Browser" as your editor.
+3. Click `Continue with GitHub` and `Authorize gitpod-io`
+4. Wait for the environment to build. This can take a while the first time.
+5. Select "VS Code Browser" as your editor.
 
 ## Build Your Project
 
