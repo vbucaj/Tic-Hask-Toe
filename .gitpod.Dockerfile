@@ -2,9 +2,10 @@ FROM gitpod/workspace-base
 
 # Install dependencies
 ENV BOOTSTRAP_HASKELL_GHC_VERSION=8.10.7
+ENV BOOTSTRAP_HASKELL_INSTALL_HLS=1
 ENV BOOTSTRAP_HASKELL_INSTALL_NO_STACK=1
 ENV BOOTSTRAP_HASKELL_INSTALL_NO_STACK_HOOK=1
-
+ENV BOOTSTRAP_HASKELL_ADJUST_BASHRC=1
 
 RUN sudo apt-get install -y build-essential curl libffi-dev libffi7 libgmp-dev libgmp10 libncurses-dev libncurses5 libtinfo5
 
