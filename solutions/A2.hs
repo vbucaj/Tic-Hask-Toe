@@ -50,7 +50,6 @@ formatLine = undefined
 
 isMoveInBounds = undefined
 
-
 -- Q#09
 
 stringToMove = undefined
