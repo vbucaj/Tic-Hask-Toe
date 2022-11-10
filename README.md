@@ -16,4 +16,4 @@ The environment contains a guided Tic-Tac-Toe project, designed as a companion t
 
 As you attend the live sessions, complete each of the assignments in the `/assignments` directory, making changes to the associated `.hs` files in the `/solutions` directory.
 
-As you complete the assignments, commit and push your changes to Github using the `Source Control` tab in the left panel.
+As you complete the assignments, stage, commit and push your changes to Github using the `Source Control` tab in the left panel.

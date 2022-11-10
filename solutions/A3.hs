@@ -47,8 +47,8 @@ getAllLines = undefined
 -- *** Assignment 3-2 ***
 
 -- Q#07
-
-isWinningLine_ = undefined
+putSquare :: Player -> Board -> Move -> Board
+putSquare = undefined
 
 -- Q#08
 
@@ -56,8 +56,8 @@ prependRowIndices = undefined
 
 -- Q#09
 
-isValidMove = undefined
+isWinningLine = undefined
 
 -- Q#10
 
-putSquare = undefined
+isValidMove = undefined

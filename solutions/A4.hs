@@ -2,7 +2,7 @@ module A4 where
 
 import A1
 import A2
-import A3 hiding (_HEADER_, formatRow, formatRows, prependRowIndices, getDiagonals, dropFirstCol, dropLastCol)
+import A3 hiding (_HEADER_, formatRow, formatRows, prependRowIndices, getDiagonals, dropFirstCol, dropLastCol, isWinningLine)
 
 
 -- *** Assignment 4-1 *** --
