@@ -19,8 +19,6 @@ _HEADER_ = undefined
 showSquares = undefined
 
 
-formatRow = undefined
-
 -- Q#03
 
 formatRows = undefined
