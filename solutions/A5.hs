@@ -12,7 +12,7 @@ import Control.Monad (when)
 
 -- Q#01
 
-printBoard b = putStrLn (formatBoard b)
+printBoard = undefined
 
 -- Q#02
 _LOGO_PATH_ :: FilePath
