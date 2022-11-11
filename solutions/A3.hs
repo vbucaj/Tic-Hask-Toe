@@ -47,7 +47,7 @@ getAllLines = undefined
 -- *** Assignment 3-2 ***
 
 -- Q#07
-putSquare :: Player -> Board -> Move -> Board
+
 putSquare = undefined
 
 -- Q#08
