@@ -38,18 +38,18 @@ play = undefined
 
 -- *** Assignment 5-2 *** --
 
--- Q#06
+-- Q#07
 
 printLogoDo = undefined
 
--- Q#07
+-- Q#08
 
 firstPlayerDo = undefined
 
--- Q#08
+-- Q#09
 
 getMoveDo = undefined
 
--- Q#09
+-- Q#10
 
 playDo = undefined

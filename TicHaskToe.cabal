@@ -32,6 +32,7 @@ executable TicHaskToe
                     , A3
                     , A4
                     , A5
+                    , Sandbox
 
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:
