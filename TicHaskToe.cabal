@@ -4,19 +4,13 @@ version:            0.1.0.0
 synopsis:           See README for more info
 tested-with:        GHC==8.10.7
 
--- A longer description of the package.
--- description:
+description:        A guided Tic-Tac-Toe project, designed as a companion to the first part of EMURGO Academy's Haskell course.
 homepage:           https://github.com/gitpod-io/template-haskell
-
--- A URL where users can report bugs.
--- bug-reports:
 license:            MIT
 license-file:       LICENSE
 author:             Ian Burzynski
 maintainer:         23251244+iburzynski@users.noreply.github.com
 
--- A copyright notice.
--- copyright:
 category:           Example
 extra-source-files:
     .hlint.yaml
@@ -34,8 +28,6 @@ executable TicHaskToe
                     , A5
                     , Sandbox
 
-    -- LANGUAGE extensions used by modules in this package.
-    -- other-extensions:
     build-depends:
         base ^>=4.14.1.0
       , random
