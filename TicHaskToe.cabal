@@ -27,6 +27,8 @@ executable TicHaskToe
                     , A4
                     , A5
                     , Sandbox
+                    , Num1
+                  
 
     build-depends:
         base ^>=4.14.1.0
