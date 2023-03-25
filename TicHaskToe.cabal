@@ -27,8 +27,8 @@ executable TicHaskToe
                     , A4
                     , A5
                     , Sandbox
-                    , E1
                     , Num1
+                    , EX1
             
                     
                   
@@ -37,6 +37,6 @@ executable TicHaskToe
         base ^>=4.14.1.0
       , random
 
-    hs-source-dirs:  lecture_exercises 
+    hs-source-dirs:   solutions, exampledir
 
     default-language: Haskell2010

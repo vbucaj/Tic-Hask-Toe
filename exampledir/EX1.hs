@@ -1,4 +1,4 @@
-module E1 where 
+module EX1 where 
 
 test1 :: String -> String
 test1 country = "yes"
