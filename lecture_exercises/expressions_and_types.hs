@@ -1,5 +1,9 @@
-module EX1 where 
+module E1 where 
 
-test1 :: String -> Integer
-test1 name = 5
+test1 :: String -> String
+test1 country = "yes"
+
+add1 :: Integer->Integer->Integer
+add1 x y = x+y
+
 
