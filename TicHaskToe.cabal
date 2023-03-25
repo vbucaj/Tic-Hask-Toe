@@ -28,6 +28,7 @@ executable TicHaskToe
                     , A5
                     , Sandbox
                     , Num1
+                    , EX1
                   
 
     build-depends:
@@ -35,4 +36,5 @@ executable TicHaskToe
       , random
 
     hs-source-dirs:   solutions
+    hs-source-dirs: lecture_exercises 
     default-language: Haskell2010
