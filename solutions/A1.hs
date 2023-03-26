@@ -26,9 +26,9 @@ _INVALID_MOVE_ = (-1,-1)
 
 -- Q#05
 
-_SEP_ :: String
+_SEP_ :: [Char]
 
-_SEP_ = "_|_"
+_SEP_ = ['_', '|', '_']
 
 -- *** Assignment 1-2 *** --
 
