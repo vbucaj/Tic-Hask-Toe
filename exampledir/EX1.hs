@@ -33,13 +33,7 @@ fst'' :: ((a,b), (c,d)) -> a
 fst'' ((w, _), _) = w
 
 
-fifth :: [a]->(a, [Char])
--- fifth [] = "null"
--- fifth y = if length(y) < 5
---             then "Less then five elements"
---          else x
---     where 
---         y = (_:_:_:_:x:_)
+fifth :: [a]->a
 fifth (_:_:_:_:x:_) = x 
 
 getPower :: Pokemon -> Power 
