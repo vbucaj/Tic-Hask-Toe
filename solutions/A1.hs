@@ -33,15 +33,21 @@ _SEP_ = ['_', '|', '_']
 -- *** Assignment 1-2 *** --
 
 -- Q#06
-data Square
+data Square = X | O | E 
+    deriving (Show, Eq)
 
 
 -- Q#07
-data GameState
+data GameState = Xwon | Owon | Tie | Progress 
+    deriving (Show, Eq, Ord)
 
 
 -- Q#08
-
+type Player = Square
+type Row  = [Square]
+type Line = [Square]
+type Board = [Row]
+type Move = (Int, Int)
 
 
 
@@ -49,14 +55,30 @@ data GameState
 
 -- Q#09
 
-getFirstPlayer = undefined
+getFirstPlayer :: Bool -> Player
+getFirstPlayer t = 
+    if t== True 
+        then X 
+        else if t == False
+            then O
+            else E
 
-
-getFirstPlayer_ = undefined
+getFirstPlayer_ :: Bool -> Player
+getFirstPlayer_ t
+    | t == True = X 
+    | t == False = O 
+    | otherwise = E 
 
 -- Q#10
 
-showGameState gs = undefined
+showGameState :: GameState -> String
+showGameState gs = case gs of 
+    Xwon -> "You Won and get an X medal!"
+    Owon -> "You Won and get an O medal"
+    Tie -> "Game is Tied"
+    _ -> "Game is in progress"
+
+
 
 -- Q#11
 
