@@ -38,7 +38,7 @@ data Square = X | O | E
 
 
 -- Q#07
-data GameState = Xwon | Owon | Tie | Progress 
+data GameState = Xwon | Owon | Tie | InProgress 
     deriving (Show, Eq, Ord)
 
 
@@ -81,10 +81,17 @@ showGameState gs = case gs of
 
 
 -- Q#11
+switchPlayer :: Player -> Player 
+switchPlayer player 
+    | player == X = O 
+    | player == O = X 
+    | otherwise = E 
 
-switchPlayer = undefined
 
 
 -- Q#12
-
-showSquare = undefined
+showSquare :: Square -> String 
+showSquare square = case square of 
+    X -> "X"
+    O -> "O"
+    E -> "_"
