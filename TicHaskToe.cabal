@@ -30,6 +30,7 @@ executable TicHaskToe
                     , Num1
                     , EX1
                     , EX2
+                    , EX3 
             
                     
                   

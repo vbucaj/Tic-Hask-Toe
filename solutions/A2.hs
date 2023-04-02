@@ -8,16 +8,22 @@ import Data.List (intercalate)
 -- *** Assignment 2-1 *** --
 
 -- Q#01
-
-promptPlayer = undefined
+promptPlayer :: Player -> String 
+promptPlayer player = concat [
+        "Player ", 
+        showSquare player, 
+        "'s turn: enter a row and a column position (ex. A1)"]
 
 -- Q#02
-
-_RANGE_ = undefined
+_RANGE_ :: [Int]
+_RANGE_ = [1 .. _SIZE_-1]
 
 -- Q#03
-
-isDigit = undefined
+isDigit :: Char -> Bool
+_MY_CHARS_ = ['0' .. '9']
+isDigit n
+    | n `elem` _MY_CHARS_ = True
+    | n `notElem` _MY_CHARS_ = False
 
 
 readDigit = undefined

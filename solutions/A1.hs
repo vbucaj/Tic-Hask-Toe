@@ -7,7 +7,7 @@ import Data.Char (toUpper)
 -- Q#01
 
 _SIZE_ :: Int
-_SIZE_ = 3
+_SIZE_ = 18
 
 -- Q#02
 
