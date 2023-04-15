@@ -70,3 +70,16 @@ replaceSquareInRow p c row = xs ++ ys'
             | null ys = []
             | c<0     = ys 
             | otherwise = p : tail ys
+
+myComplexConstant :: Integer -> Integer -> Integer
+myComplexConstant x y = area
+    where area = x'*y
+          x'
+            | x < 0 =1
+            | x < z = 0
+            |otherwise = 2
+            where z = x*2 - 3
+
+
+
+
