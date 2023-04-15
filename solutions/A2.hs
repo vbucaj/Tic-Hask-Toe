@@ -53,13 +53,20 @@ formatLine = undefined
 -- *** Assignment 2-2 *** --
 
 -- Q#08
-
-isMoveInBounds = undefined
+isMoveInBounds :: Move -> Bool 
+isMoveInBounds (r, c) = and [r >= 0, r<_SIZE_, c >= 0, c < _SIZE_]
 
 -- Q#09
-
-stringToMove = undefined
+stringToMove :: String -> Move
+stringToMove [r , c] = (convertRowIndex r, readDigit c)
+stringToMove _ = _INVALID_MOVE_ -- (-1, -1)
 
 -- Q#10
-
-replaceSquareInRow = undefined
+replaceSquareInRow :: Player -> Int -> Row -> Row
+replaceSquareInRow p c row = xs ++ ys'
+    where
+        (xs, ys) = splitAt c row 
+        ys'
+            | null ys = []
+            | c<0     = ys 
+            | otherwise = p : tail ys
