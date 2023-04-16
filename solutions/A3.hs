@@ -20,8 +20,11 @@ _HEADER_ :: String
 _HEADER_ = " " ++ formatLine (showInts _RANGE_)
 
 -- Q#02
-
-showSquares = undefined
+showSquares :: [Square] -> [String]
+showSquares row = reverse (go [] row ) where
+    go acc []    = acc
+    go acc (y:ys) = go (z:acc) ys
+      where z = show y
 
 
 -- Q#03
