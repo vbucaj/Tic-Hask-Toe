@@ -81,3 +81,41 @@ init' :: [a] -> [a]
 init' [x] = []
 init' (x:xs) = x : init' xs
 init' [] = error "empty list"
+
+
+-----------------------------------------------
+
+-- COMPLEX RECURSION (recursive-go)
+-- iterative recursion strategy -- 
+
+-- implementation of reverse function via iterative recursion 
+reverse'' :: [a] -> [a]
+reverse'' xs = go [] xs where
+    go :: [a] -> [a] -> [a] -- go function has an accumulator where it builds up the reverse list
+    go acc []      = acc -- this is the base case, when the list becomes empty, it simply returns the accumulator
+    go acc (y:ys) = go (y:acc) ys -- go simply pre-pends the first element of the provided list xs into the accumulator x:acc
+
+-- always blue
+
+-- alwaysBlue :: [Color]->Bool
+-- alwaysBlue [] = True
+-- alwaysBlue (c:cs) = c == Blue && alwaysBlue cs 
+
+-- alwaysBlue' :: Bool -> [Color] -> Bool -- will return False if we start with an empty list
+-- alwaysBlue bool []   = bool 
+-- alwaysBlue _  (c:cs) = c == Blue && alwaysBlue True cs 
+-- the Bool acts like a swtich that flips on when the first element is Blue 
+-- because of the 'lazy' evaluation of && the recursion will STOP as soon as a False value is reached 
+
+-- check for primality of a number
+
+isPrime :: Int -> Bool
+isPrime n 
+  | n <= 1    = False
+  | n <= 3    = True
+  | otherwise = go 2
+  where 
+    go i 
+      | i >=n    = True -- if acc. reaches n, n is prime
+      | mod n i == 0 = False -- not prime if divisible by the acc
+      | otherwise = go (i+1) -- increment the acc and continue 

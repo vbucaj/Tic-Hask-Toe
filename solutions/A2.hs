@@ -16,7 +16,7 @@ promptPlayer player = concat [
 
 -- Q#02
 _RANGE_ :: [Int]
-_RANGE_ = [1 .. _SIZE_-1]
+_RANGE_ = [0 .. _SIZE_-1]
 
 -- Q#03
 isDigit :: Char -> Bool
@@ -47,8 +47,8 @@ _TIED_BOARD_ = undefined
 indexRowStrings = undefined
 
 -- Q#07
-
-formatLine = undefined
+formatLine :: [String] -> String 
+formatLine xs = _SEP_ ++ intercalate _SEP_ xs ++ _SEP_
 
 -- *** Assignment 2-2 *** --
 

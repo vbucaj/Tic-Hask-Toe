@@ -1,13 +1,14 @@
 module A1 where
 
 import Data.Char (toUpper)
+import Data.List (intercalate)
 
 -- *** Assignment 1-1 *** --
 
 -- Q#01
 
 _SIZE_ :: Int
-_SIZE_ = 18
+_SIZE_ = 3
 
 -- Q#02
 

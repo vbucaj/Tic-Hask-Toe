@@ -3,16 +3,21 @@ module A3 where
 import A1
 import A2
 
-import Data.List (transpose)
+import Data.List (transpose, intercalate)
 
 -- *** Assignment 3-1 ***
 
 -- Q#01
+showInts :: [Int] -> [String]
+showInts xs  = reverse (go [] xs) where
+    -- go :: [String] -> [String] -> [String]
+    go acc []    = acc 
+    go acc (y:ys) = go (z:acc) ys
+        where z = show y
 
-showInts = undefined
 
-
-_HEADER_ = undefined
+_HEADER_ :: String
+_HEADER_ = " " ++ formatLine (showInts _RANGE_)
 
 -- Q#02
 
