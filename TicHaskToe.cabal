@@ -32,6 +32,7 @@ executable TicHaskToe
                     , EX2
                     , EX3
                     , EX4
+                    , EX5
             
                     
                   
