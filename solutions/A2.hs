@@ -3,7 +3,9 @@
 module A2 where
 
 import A1
-import Data.List (intercalate)
+import Data.List 
+-- import Data.Char ($, .)
+import GHC.Base (VecElem(Int16ElemRep))
 
 -- *** Assignment 2-1 *** --
 
@@ -26,25 +28,32 @@ isDigit n
     | n `notElem` _MY_CHARS_ = False
 
 
-readDigit = undefined
+charToString :: Char -> String
+charToString c = [c]
+
+-- readDigit = undefined
+readDigit :: Char -> Int
+readDigit n 
+  | isDigit n == True = read $ charToString n :: Int
+  | otherwise = read "-1" :: Int 
 
 -- Q#04
 
-_EMPTY_ROW_ = undefined
+-- _EMPTY_ROW_ = undefined
 
 
-_EMPTY_BOARD_ = undefined
+-- _EMPTY_BOARD_ = undefined
 
--- Q#05
+-- -- Q#05
 
-isTied = undefined
+-- isTied = undefined
 
 
-_TIED_BOARD_ = undefined
+-- _TIED_BOARD_ = undefined
 
--- Q#06
+-- -- Q#06
 
-indexRowStrings = undefined
+-- indexRowStrings = undefined
 
 -- Q#07
 formatLine :: [String] -> String 

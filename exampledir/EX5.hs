@@ -67,4 +67,35 @@ pangram' txt = (== 26) . length . nub . map toLower . filter isAlpha $ txt
 
 -- pangram'' txt = (== 26) . length . nub . map toLower . (filter isAlpha) txt
 
+-- Composotion of fucntions works exactly like in math (F o G o H) x , you need to put parenthesis around the functions
 pangram'' txt = ((== 26) . length . nub . map toLower . filter isAlpha ) txt
+
+
+-- IO Context 
+
+-- Bind (>>=)
+
+-- (>>=) :: IO a -> (a -> IO b) -> IO b 
+
+-- myAction :: a -> IO b 
+
+-- boundAction :: IO a -> IO b 
+-- boundAction = (>>= myAction)
+
+-- return
+
+-- myPureFunc :: a->b 
+-- return :: a -> IO a 
+
+-- myAction :: a -> IO b 
+-- myAction = return . myPureFunc 
+
+
+-- Randomness 
+
+-- generate a random integer
+
+-- uniformM globalStdGen :: IO Int 
+
+-- (uniformM globalStdGen :: IO Int) >>= (\i -> if even i return "heads" else return "tails")
+
