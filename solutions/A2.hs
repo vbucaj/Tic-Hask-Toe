@@ -39,21 +39,31 @@ readDigit n
 
 -- Q#04
 
--- _EMPTY_ROW_ = undefined
+_EMPTY_ROW_ :: [Square]
+_EMPTY_ROW_ = replicate _SIZE_ E 
 
-
--- _EMPTY_BOARD_ = undefined
+_EMPTY_BOARD_ :: [[Square]]
+_EMPTY_BOARD_ = replicate _SIZE_ _EMPTY_ROW_ 
 
 -- -- Q#05
 
--- isTied = undefined
+isTied :: Board -> Bool 
+isTied [] = True 
+isTied (x:xs) = (E `notElem` x) && isTied xs
 
 
--- _TIED_BOARD_ = undefined
+_TIED_BOARD_ :: Board
+_TIED_BOARD_ = [
+    [X, O, O]
+  , [O, X, X]
+  , [O, X, O]
+  ]
 
 -- -- Q#06
 
--- indexRowStrings = undefined
+indexRowStrings :: [String] -> [(Char,String)]
+_ALPHABET_CHARS_ = ['A'..'Z']
+indexRowStrings my_list = zip _ALPHABET_CHARS_ my_list 
 
 -- Q#07
 formatLine :: [String] -> String 
